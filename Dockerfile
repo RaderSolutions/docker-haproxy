@@ -1,5 +1,3 @@
-# Templates pulled from DockerFiles at https://hub.docker.com/r/library/haproxy/
-
 FROM alpine:3.5
 
 ENV HAPROXY_MAJOR 1.7
