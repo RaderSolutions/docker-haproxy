@@ -1,0 +1,1 @@
+Intended to provide transparent tcp-mode haproxy for docker containers in the same network
