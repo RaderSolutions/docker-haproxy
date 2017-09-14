@@ -45,7 +45,8 @@ RUN set -x \
 	&& mkdir -p /usr/local/etc/haproxy \
 	&& cp -R /usr/src/haproxy/examples/errorfiles /usr/local/etc/haproxy/errors \
 	&& rm -rf /usr/src/haproxy \
-	&& apt-get install -y iptables \
+	&& apt-get update \
+	&& apt-get install -y -q iptables \
 	\
 	&& apt-get purge -y --auto-remove $buildDeps
 
