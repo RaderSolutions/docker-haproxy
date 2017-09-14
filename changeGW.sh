@@ -15,7 +15,7 @@ if [[ ! $host == "" ]] ; then
       ip route add default via $hostIP
       echo "default route updated to point to $1"
         else
-          # default route already changed
+          echo default route already changed > /dev/null
         fi
   else
     echo "host ($host) didn't respond to pings"
