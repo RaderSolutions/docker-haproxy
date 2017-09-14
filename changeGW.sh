@@ -6,7 +6,6 @@
 
 host=$1
 if [[ ! $host == "" ]] ; then
-
   defaultGW=`route -n | grep ^0\.0\.0\.0 | awk '{ print $2 }'`
   hostIP=`ping $host -c1 | grep $host -m1 | grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}'`
   #ip route add 10.0.0.0/8 via $defaultGW
