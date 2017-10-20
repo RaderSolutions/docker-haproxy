@@ -4,5 +4,5 @@ Utilize the feature by setting `source 0.0.0.0 usesrc clientip` in the backend w
 
 This will preserve the source IP for load-balanced packets to that backend
 
-[github](https://github.com/RaderSolutions/docker-haproxy)
-[docker hub](https://hub.docker.com/r/radersolutions/haproxy/)
+- [github](https://github.com/RaderSolutions/docker-haproxy)
+- [docker hub](https://hub.docker.com/r/radersolutions/haproxy/)
