@@ -18,3 +18,6 @@ fi
 exec "$@"
 
 exec "haproxy -f /usr/local/etc/haproxy/haproxy.cfg"
+exec "fail2ban-client -b start"
+
+exec "tail -f /var/log/fail2ban.log /var/log/messages"
