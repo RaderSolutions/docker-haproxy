@@ -16,3 +16,5 @@ fi
 #set_up
 
 exec "$@"
+
+exec "haproxy -f /usr/local/etc/haproxy/haproxy.cfg"
