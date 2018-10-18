@@ -1,8 +1,7 @@
-Intended to provide transparent tcp-mode haproxy for docker containers in the same network
+This is an haproxy image with bundled fail2ban.
 
-Utilize the feature by setting `source 0.0.0.0 usesrc clientip` in the backend while using `mode tcp` and making the backend server(s) use the haproxy container as its default gateway.
+fail2ban can be customized however one would like by symlinking a custom folder struture to `/etc/fail2ban`, but by default it includes a configuration that gets ban list from the file at ` /opt/logdistro/logs/newbans.log`. This file's format needs to match the format defined in `newbans.conf`
 
-This will preserve the source IP for load-balanced packets to that backend
-
+Source links:
 - [github](https://github.com/RaderSolutions/docker-haproxy)
 - [docker hub](https://hub.docker.com/r/radersolutions/haproxy/)
