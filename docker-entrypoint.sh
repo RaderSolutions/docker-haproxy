@@ -18,6 +18,7 @@ fi
 exec "$@"
 
 /usr/local/sbin/haproxy -f /usr/local/etc/haproxy/haproxy.cfg
-fail2ban-client -b start
+#fail2ban-client -b start
+touch  /opt/logdistro/logs/newbans.log
 
-tail -f /var/log/fail2ban.log /var/log/messages
+tail -f /var/log/fail2ban.log /opt/logdistro/logs/newbans.log
