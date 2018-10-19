@@ -6,7 +6,7 @@ bantime  = 900
 maxretry = 3
 
 backend = auto
-banaction = iptables-multiport
+#banaction = iptables-multiport
 
 
 [LogDistro]
@@ -15,3 +15,4 @@ enabled = true
 filter=newbans
 logpath = /opt/logdistro/logs/newbans.log
 maxretry = 1
+datepattern = %%Y-%%m-%%d %%H:%%M:%%S
