@@ -10,9 +10,10 @@ backend = auto
 
 
 [LogDistro]
-backend=polling
+#backend=polling
+backend=gamin
 enabled = true
 filter=newbans
-logpath = /opt/logdistro/logs/newbans.log
+logpath = /opt/logdistro/logs/newbans2.log
 maxretry = 1
 datepattern = %%Y-%%m-%%d %%H:%%M:%%S
